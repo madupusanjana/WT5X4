@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Sample Shopping Cart</h1>
+</header>
+
+<main>
+    <section id="product-list">
+        <h2>Products</h2>
+
+        <div class="product">
+            <span>Dyson AirWrap</span>
+            <button onclick="addToCart('Dyson Airwrap', 45000)">Add to Cart (Rs.45,000)</button>
+        </div>
+
+        <div class="product">
+            <span>Nintendo Switch 2</span>
+            <button onclick="addToCart('Nintendo Switch 2', 60000)">Add to Cart (Rs.60,000)</button>
+        </div>
+
+        <div class="product">
+            <span>Lego Otter Set</span>
+            <button onclick="addToCart('Lego Otter Set', 70000)">Add to Cart (Rs.70,000)</button>
+        </div>
+
+        <div class="product">
+            <span>Hirono Dolls Set</span>
+            <button onclick="addToCart('Hirono Dolls Set', 40000)">Add to Cart (Rs.40,000)</button>
+        </div>
+
+        <div class="product">
+            <span>Rolls Royes Phantom Toy</span>
+            <button onclick="addToCart('Rolls Royes Phantom Toy', 50000)">Add to Cart (Rs.50,000)</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartItems">
+            <!-- Cart items will be added here -->
+        </ul>
+        <p id="totalPrice">Total Price: Rs.0</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Shopping Cart Example</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
